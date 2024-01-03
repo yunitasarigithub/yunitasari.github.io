@@ -2,74 +2,149 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Yunita Sari - Curriculum Vitae</title>
-  <!-- Bootstrap CSS -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Curriculum Vitae</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
   <style>
     body {
-      background-color: #f8f9fa;
-      font-family: 'Arial', sans-serif;
+      background-color: #f5f5f5;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
-    .jumbotron {
-      background-color: #343a40;
-      color: #ffffff;
-      padding: 80px 0;
+    .profile-picture {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 5px solid #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
-    .cv-section {
-      padding: 60px 0;
+    hr {
+      border-top: 2px solid #c0c0c0;
     }
 
-    .cv-heading {
-      font-size: 2.5rem;
-      color: #007bff;
+    .card {
+      background-color: #d2b48c;
+      color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
     }
 
-    .cv-content {
-      font-size: 1.2rem;
+    .card:hover {
+      transform: scale(1.02);
+    }
+
+    .btn-primary {
+      background-color: #a52a2a;
+      border-color: #a52a2a;
+    }
+
+    .btn-primary:hover {
+      background-color: #8b0000;
+      border-color: #8b0000;
+    }
+
+    .list-group-item {
+      background-color: #d2b48c;
+      color: #fff;
+      border: 1px solid #c0c0c0;
+    }
+
+    /* Penambahan warna monokromatik beige dan brown */
+    .bg-beige {
+      background-color: #f5f5dc;
+    }
+
+    .text-brown {
+      color: #8b4513;
+    }
+
+    .btn-brown {
+      background-color: #8b4513;
+      border-color: #8b4513;
+    }
+
+    .btn-brown:hover {
+      background-color: #654321;
+      border-color: #654321;
     }
   </style>
 </head>
 <body>
 
-  <!-- Jumbotron -->
-  <div class="jumbotron text-center">
-    <h1 class="display-4">Yunita Sari</h1>
-    <p class="lead">Curriculum Vitae</p>
-  </div>
-
-  <!-- CV Section -->
-  <div class="container cv-section">
+  <div class="container mt-5 bg-beige">
     <div class="row">
-      <div class="col-md-6">
-        <h2 class="cv-heading">Pendidikan</h2>
-        <p class="cv-content"><strong>Politeknik PGRI Banten</strong><br>Bisnis Digital<br> Graduation Year: 2022</p>
-      </div>
-      <div class="col-md-6">
-        <h2 class="cv-heading">Pengalaman</h2>
-        <p class="cv-content"><strong>Finance Accounting</strong><br>PT. Surya Permata Makmur<br> Duration: May/2019 - May/2022</p>
+      <div class="col-md-6 mx-auto text-center">
+        <img src="foto cv yuni.jpg" alt="Foto Profil" class="profile-picture mb-3">
+        <h2 class="text-brown">Nama Lengkap</h2>
+        <p class="text-muted"><i class="fas fa-envelope"></i> email@example.com | <i class="fas fa-phone"></i> (123) 456-7890</p>
+
+        <hr>
+
+        <h3 class="mb-4 text-brown">Riwayat Pendidikan</h3>
+        <ul class="list-group">
+          <li class="list-group-item">S1 Teknik Informatika - Universitas ABC (2010-2014)</li>
+          <li class="list-group-item">SMA Negeri 1 Kota XYZ (2007-2010)</li>
+        </ul>
+
+        <h3 class="mt-4 mb-4 text-brown">Pengalaman Kerja</h3>
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Web Developer</h5>
+            <p class="card-text">
+              Perusahaan ABC, Jakarta (2015-2018)<br>
+              Bertanggung jawab untuk pengembangan dan pemeliharaan situs web perusahaan.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tambahkan 2 pengalaman kerja lainnya sesuai kebutuhan -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Front-end Developer</h5>
+            <p class="card-text">
+              Perusahaan XYZ, Surabaya (2013-2015)<br>
+              Mengembangkan antarmuka pengguna yang responsif dan menarik.
+            </p>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5 class="card-title">Mobile App Developer</h5>
+            <p class="card-text">
+              Startup KLMN, Bandung (2010-2013)<br>
+             
+    <h3 class="mb-4 text-brown">Soft Skill</h3>
+    <ul class="text-brown">
+      <li>Pemecahan Masalah</li>
+      <li>Komunikasi Efektif</li>
+      <li>Kerjasama Tim</li>
+      <li>Kreativitas</li>
+      <li>Pengaturan Waktu</li>
+    </ul>
+
+    <h3 class="mb-4 text-brown">Hard Skill</h3>
+    <ul class="text-brown">
+      <li>HTML, CSS, JavaScript</li>
+      <li>React.js, Vue.js</li>
+      <li>Node.js, Express.js</li>
+      <li>Git, GitHub</li>
+      <li>UI/UX Design</li>
+    </ul>
+
+    <h3 class="mb-4 text-brown">Portfolio Proyek</h3>
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Proyek XYZ</h5>
+        <p class="card-text">Deskripsi proyek XYZ.</p>
+        <a href="https://www.youtube.com/watch?v=videoid" class="btn btn-brown" target="_blank"><i class="fab fa-youtube"></i> Tonton Video</a>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="cv-heading">Kemampuan</h2>
-        <p class="cv-content">Ms Word, Ms Excel, Ms Power Point, Ms Acces, Desain</p>
-      </div>
-      <div class="col-md-6">
-        <h2 class="cv-heading">Kontak</h2>
-        <p class="cv-content">Email:cuaksss@gmail.com<br> Phone:08123456789</p>
-      </div>
-    </div>
+    <!-- Tambahkan proyek lainnya sesuai kebutuhan -->
+
   </div>
-
-  <!-- Bootstrap JS and Popper.js -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-</body>
-</html>
+</div>
